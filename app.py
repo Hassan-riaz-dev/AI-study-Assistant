@@ -189,7 +189,7 @@ answering before revealing solutions when appropriate.
             with st.chat_message("assistant"):
                 with st.spinner("📚 Preparing your answer..."):
                     response = client.chat.completions.create(
-                       model="llama-3.3-70b-versatile",
+                      model="openai/gpt-oss-20b",
                         messages=api_messages,
                         temperature=0.5,
                         max_tokens=1500
